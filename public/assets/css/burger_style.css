@@ -1,0 +1,76 @@
+body {
+    background-image: url(../img/BG1.jpg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+}
+
+
+.top_row {
+    background-image: url(../img/food.png);
+    text-align: center;
+    padding: 20px;
+}
+img {
+    position: relative;
+}
+
+h1 {
+    font-family: 'Ceviche One', cursive;
+    color: rgb(153, 25, 25);
+    
+}
+
+.middle_row {
+    background-image: url(../img/food.png);
+    padding: 34px;
+}
+
+.innerbox {
+    background-color: white;
+    padding-top: 17px;
+    margin: 20px;
+    width: 645px;
+    height: 765px;
+
+}
+
+.col2 {
+    
+}
+.col3 {
+    display: inline-block;
+    position: relative;
+    
+
+}
+.bottom_row {
+    align-content: center;
+    background-color: rgb(119, 194, 119);
+    padding: 10px; 
+}
+
+ul {
+    font-family: 'Poiret One', cursive;
+}
+li{
+    font-family: 'Poiret One', cursive;
+}
+
+footer {
+    text-align: center;
+    background-image: url(../img/food.png);
+    width: 720px;
+    height: 28px;
+    position: absolute;
+    left: 112px;
+    font-size: 12px;
+    color: white
+
+}
+p {
+    font-family: 'Prompt', sans-serif;
+}
+h5 {
+    font-family: 'Prompt', sans-serif;
+}
