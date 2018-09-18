@@ -54,11 +54,11 @@ var orm = {
             cb(result);
         });
     },
-    insertOne: function (table, burger_name, vals, cb) {
+    insertOne: function (table, cols, vals, cb) {
         var queryString = "INSERT INTO " + table;
 
         queryString += " (";
-        queryString += burger_name.toString();
+        queryString += cols.toString();
         queryString += ") ";
         queryString += "VALUES (";
         queryString += printQuestionMarks(vals.length);
