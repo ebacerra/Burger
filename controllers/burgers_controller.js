@@ -27,31 +27,34 @@ router.post("/burgers/create", function (req, res) {
     ], [
             req.body.burger_name, req.body.devoured
 
-        ], function () {
+        ], function (result) {
             // Send back the ID of the new quote
             res.json({ id: result.insertId });
-            res.redirect('/burgers');
-            console.log(burger_name, devoured + "IM Working")
+            //res.redirect('/burgers');
+            // console.log(req.body.burger_name, req.body.devoured);
         });
 });
 
 router.put("/burgers/update/:id", function (req, res) {
     var condition = "id = " + req.params.id;
 
+    console.log("hello");
+
     console.log("condition", condition);
 
-    burger.updateOne({
-        devoured: req.body.devoured
+    burger.update({
+        devoured: 1
 
-    }, condition, function () {
+    }, condition, function (result) {
         if (result.changedRows == 0) {
             // If no rows were changed, then the ID must not exist, so 404
             return res.status(404).end();
         } else {
             res.status(200).end();
         }
-        res.redirect('/burgers');
-        console.log(devoured + "Test!")
+        // console.log(devoured + "Test!")
+        // res.redirect('/burgers');
+
     });
 });
 

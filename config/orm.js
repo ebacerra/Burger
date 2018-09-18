@@ -54,15 +54,15 @@ var orm = {
             cb(result);
         });
     },
-    insertOne: function (table, burger_name, cb) {
-        var queryString = "INSERT INTO " + table + "(burger_name) VALUES ('" + burger_name + "')";
+    insertOne: function (table, burger_name, vals, cb) {
+        var queryString = "INSERT INTO " + table;
 
-        // queryString += " (";
-        // queryString += cols.toString();
-        // queryString += ") ";
-        // queryString += "VALUES (";
-        // queryString += printQuestionMarks(vals.length);
-        // queryString += ") ";
+        queryString += " (";
+        queryString += burger_name.toString();
+        queryString += ") ";
+        queryString += "VALUES (";
+        queryString += printQuestionMarks(vals.length);
+        queryString += ") ";
 
         console.log(queryString);
 

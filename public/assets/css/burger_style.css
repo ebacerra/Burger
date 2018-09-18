@@ -31,7 +31,7 @@ h1 {
     padding-top: 17px;
     margin: 20px;
     width: 645px;
-    height: 765px;
+    height: 550px;
 
 }
 
@@ -60,7 +60,7 @@ li{
 footer {
     text-align: center;
     background-image: url(../img/food.png);
-    width: 720px;
+    width: 1138px;
     height: 28px;
     position: absolute;
     left: 112px;
