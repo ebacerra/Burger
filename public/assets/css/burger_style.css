@@ -30,8 +30,8 @@ h1 {
     background-color: white;
     padding-top: 17px;
     margin: 20px;
-    width: 645px;
-    height: 550px;
+    width: 859px;
+    height: 368px
 
 }
 
@@ -57,7 +57,8 @@ li{
     font-family: 'Poiret One', cursive;
 }
 
-footer {
+/* footer {
+    align-content: center;
     text-align: center;
     background-image: url(../img/food.png);
     width: 1138px;
@@ -65,7 +66,7 @@ footer {
     position: absolute;
     left: 112px;
     font-size: 12px;
-    color: white
+    color: white */
 
 }
 p {
