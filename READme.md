@@ -4,12 +4,12 @@
 
 ---------------------------------------------
 
-![image](/Burger.png)
+![image](../public/assets/img/Burger.png)
 
 
 ---------------------------------------------
 > * With Table creation
-> * Id
+> * Id 
 > * Burger_Name
 > * Devoured
 
